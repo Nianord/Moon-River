@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title></title>
+    	<meta name="format-detection" content="telephone=no">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		
+		<div class="wrapper">
+
+			<header class="header">
+				<div class="header__container">
+					<div class="header__item">
+						<div class="header__logo">
+							<div class="header__logo_commonsize" ><img src="img/icons/logo.svg" alt="Moon River logo"></div>
+							<div class="header__logo_minisize"><img src="img/icons/logo_inv.svg" alt="Moon River logo"></div>
+						</div>
+					</div>
+					<div class="header__item">
+						<div class="header__icons">
+							<a href=""><img src="img/icons/like.svg" alt="Like"></a>
+							<a href=""><img src="img/icons/login.svg" alt="Login"></a>
+							<a href=""><img src="img/icons/cart.svg" alt="Cart"></a>
+							<p class="header__counter"></p>
+						</div>
+						<div class="header__burger">
+							<span></span>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<section class="menu">
+				<div class="menu__container">
+					<div class="menu__categories">
+						<button class="menu__tablinks" id="defaultOpen" onclick="openCategory(event, 'jewelry')">Ювелирные изделия</button>
+						<button class="menu__tablinks" onclick="openCategory(event, 'watch')">часы</button>
+						<button class="menu__tablinks" onclick="openCategory(event, 'perfume')">ароматы</button>
+						<button class="menu__tablinks" onclick="openCategory(event, 'brands')">бренды</button>
+						<button class="menu__tablinks" onclick="openCategory(event, 'leather')">изделия из кожи</button>
+						<button class="menu__tablinks" onclick="openCategory(event, 'wedding')">Свадебные украшения</button>
+						<button class="menu__tablinks" onclick="openCategory(event, 'other')">другое</button>
+					</div>
+
+					<div class="menu__content">
+						<div id="jewelry" class="menu__tabcontent">
+							<div class="menu__list">
+								<h4 class="menu__cont-title">для кого</h4>
+								<ul>
+									<li class="menu__link"><a href="">Для женщин</a></li>
+									<li class="menu__link"><a href="">Для мужчин</a></li>
+									<li class="menu__link"><a href="">Для детей</a></li>
+								</ul>
+							</div>
+							<div class="menu__list">
+								<h4 class="menu__cont-title">Категории</h4>
+								<ul>
+									<li class="menu__link"><a href="">Кольца</a></li>
+									<li class="menu__link"><a href="">Браслеты</a></li>
+									<li class="menu__link"><a href="">Колье</a></li>
+									<li class="menu__link"><a href="">Серьги</a></li>
+									<li class="menu__link"><a href="">Броши</a></li>
+								</ul>
+							</div>
+							<div class="menu__list">
+								<h4 class="menu__cont-title">материал</h4>
+								<ul>
+									<li class="menu__link"><a href="">Изделия с бриллиантами</a></li>
+									<li class="menu__link"><a href="">Желтое золото</a></li>
+									<li class="menu__link"><a href="">Белое золото</a></li>
+									<li class="menu__link"><a href="">Розовое золото</a></li>
+								</ul>
+							</div>
+							<div class="menu__list">
+								<h4 class="menu__cont-title">бренд</h4>
+								<ul>
+									<li class="menu__link"><a href="">Mercury</a></li>
+									<li class="menu__link"><a href="">Chopard</a></li>
+									<li class="menu__link"><a href="">Cartier</a></li>
+									<li class="menu__link"><a href="">Graff</a></li>
+									<li class="menu__link"><a href="">Garrard</a></li>
+									<li class="menu__link menu__link_more"><a href="">Показать все бренды</a></li>
+								</ul>
+							</div>
+						</div>
+						<div id="watch" class="menu__tabcontent">
+							<div class="menu__list">
+								<h4 class="menu__cont-title">Lorem ipsum</h4>
+								<ul>
+									<li class="menu__link"><a href="">Lorem ipsum</a></li>
+									<li class="menu__link"><a href="">Lorem ipsum</a></li>
+									<li class="menu__link"><a href="">Lorem ipsum</a></li>
+								</ul>
+							</div>
+							<div class="menu__list">
+								<h4 class="menu__cont-title">Lorem ipsum</h4>
+								<ul>
+									<li class="menu__link"><a href="">Lorem ipsum</a></li>
+									<li class="menu__link"><a href="">Lorem ipsum</a></li>
+									<li class="menu__link"><a href="">Lorem ipsum</a></li>
+									<li class="menu__link"><a href="">Lorem ipsum</a></li>
+									<li class="menu__link"><a href="">Lorem ipsum</a></li>
+								</ul>
+							</div>
+							<div class="menu__list">
+								<h4 class="menu__cont-title">Lorem ipsum</h4>
+								<ul>
+									<li class="menu__link"><a href="">Lorem ipsum</a></li>
+									<li class="menu__link"><a href="">Lorem ipsum</a></li>
+									<li class="menu__link"><a href="">БLorem ipsum</a></li>
+									<li class="menu__link"><a href="">Lorem ipsum</a></li>
+								</ul>
+							</div>
+							<div class="menu__list">
+								<h4 class="menu__cont-title">Lorem ipsum</h4>
+								<ul>
+									<li class="menu__link"><a href="">Lorem ipsum</a></li>
+									<li class="menu__link"><a href="">Lorem ipsum</a></li>
+									<li class="menu__link"><a href="">Lorem ipsum</a></li>
+									<li class="menu__link"><a href="">Lorem ipsum</a></li>
+									<li class="menu__link"><a href="">Lorem ipsum</a></li>
+									<li class="menu__link menu__link_more"><a href="">Показать все бренды</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="menu__info">
+						<div class="menu__pic">
+							<div class="menu__pic-bg ibg">
+								<img src="img/images/menu.jpg" alt="Picture of man and woman">
+							</div>
+							<p class="menu__text1"><a href="">Новая коллекция by Mercury</a></p>
+							<h2 class="menu__pic-title"><a href="">JUSTE UN CLOU</a></h2>
+							<div class="menu__text2">
+								<a href="">
+									<span>Cмотреть коллекцию</span>
+									<img src="img/icons/Arrow.svg" alt="arrow">
+								</a>
+							</div>
+						</div>
+						<div class="menu__contacts contacts">
+							<div class="contacts__phone phone">
+								<p>телефон горячей линии</p>
+								<p><a href="tel:+7800456456">+7 800 456 456</a></p>
+							</div>
+							<div class="contacts__socials socials">
+								<a href=""><img src="img/icons/Facebook.svg" alt="Facebook"></a>
+								<a href=""><img src="img/icons/Instagram.svg" alt="Instagram"></a>
+							</div>
+							<div class="contacts__subscribe subscribe">
+								<form class="subscribe__form" name="subscribe" method="POST" action="">
+									<div class="subscribe__title">подпишитесь на новости</div>
+									<div class="subscribe__input-container">
+										<input class="subscribe__input" type="email" name="email" required="required" placeholder="Введите Email">
+										<input class="subscribe__btn" type="submit" name="submit_btn" value="">
+									</div>
+								</form>
+							</div>
+							<div class="contacts__apps apps">
+								<a href=""><img src="img/icons/apple-store.png" alt="App Store"></a>
+								<a href=""><img src="img/icons/google-play.png" alt="Google Play"></a>
+							</div>
+						</div>
+					</div>
+					<div class="menu__lang">
+						<a href="" class="menu__lang_ru active_dark">RU</a>
+						<a href="" class="menu__lang_en">EN</a>
+					</div>
+				</div>
+			</section>
+
+			<main>
+				<section class="collection">
+					<div class="collection__bg"></div>
+					<div class="collection__row">
+						<div class="collection__item">
+							<div class="collection__text">
+								<h1 class="collection__title">HIGH JEWELRY</h1>
+								<p class="collection__link"><a href="">Смотреть коллекцию</a></p>
+							</div>
+							<div class="collection__lang">
+								<a href="" class="collection__lang_ru active">RU</a>
+								<a href="" class="collection__lang_en">EN</a>
+							</div>
+						</div>
+						<div class="collection__item	product">
+								<div class="product__picture product__picture_pos">
+									<a href=""><img src="img/images/ring1.png" alt="TRINITY, Cartier"></a>
+								</div>
+								<div class="product__description product__description_pos">
+									<a href="">
+									<h4 class="product__title">КОЛЬЦО TRINITY, Cartier</h4>
+									<p class="product__text">Белое золото, бриллианты</p>
+									<p class="product__price">498 000 ₽</p>
+									</a>
+								</div>
+						</div>
+				</div>
+			</section>
+
+			<section class="shops">
+				<div class="shops__container ">
+					<div class="shops__item division">
+						<div class="division__row">
+							<div class="division__elem">
+								<div class="division__bg ibg">
+									<img src="img/images/for_men.jpg" alt="For men">
+								</div>
+								<p class="division__subtitle">Перейти в раздел</p>
+								<h2 class="division__title"><a href="">Для мужчин</a></h2>
+							</div>
+							<div class="division__elem">
+								<div class="division__bg ibg">
+									<img src="img/images/for_women.jpg" alt="For women">
+								</div>
+								<p class="division__subtitle">Перейти в раздел</p>
+								<h2 class="division__title"><a href="">Для женщин</a></h2>
+							</div>
+						</div>
+					</div>
+					<div class="shops__item address">
+						<div class="address__row">
+							<div class="address__elem container-add">
+								<h3 class="address__title">Найди бутик около себя</h3>
+								<p class="address__text">Введите свой адрес и узнайте о самых ближайших бутиках к вам</p>
+								<form class="address__form subscribe__form" name="address" method="" action="">
+									<div class="address__input-container subscribe__input-container">
+										<input class="address__input subscribe__input" type="search" name="address" placeholder="Введите адрес">
+										<input class="address__btn subscribe__btn" type="submit" name="address-submit_btn" value="">
+									</div>
+								</form>
+							</div>
+							<div class="address__elem">
+								<div class="address__map" id="map">
+									<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A79e54ccbb388318cbb56ff84c2dc47a876a4203b2d52366189ba1be2fe0d4452&amp;source=constructor" frameborder="0"></iframe>								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="products">
+				<div class="products__container">
+						<div class="products__row item-products">
+							<div class="item-products__card-cont">
+								<div class="item-products__card product">
+									<div class="product__picture">
+										<a href=""><img src="img/images/ring2.png" alt="jow’s, Cartier"></a>
+									</div>
+									<div class="product__description">
+										<a href="">
+										<h4 class="product__title product__title_color">КОЛЬЦО jow’s, Cartier</h4>
+										<p class="product__text product__text_color">Белое золото, бриллианты</p>
+										<p class="product__price product__price_color product__price_weight">674 000 ₽</p>
+										</a>
+									</div>
+								</div>
+								<div class="item-products__card product">
+									<div class="product__picture">
+										<a href=""><img src="img/images/ring3.png" alt="Croix, Cartier"></a>
+									</div>
+									<div class="product__description">
+										<a href="">
+										<h4 class="product__title product__title_color">КОЛЬЦО croix, Cartier</h4>
+										<p class="product__text product__text_color">Желтое, белое, розовое золото</p>
+										<p class="product__price product__price_color product__price_weight">432 000 ₽</p>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="item-products__card-cont item-products__card-cont_big">
+								<div class="item-products__card product product_big">
+									<div class="product__picture product__picture_bg ibg">
+										<a href=""><img src="img/images/necklace.jpg" alt="Etoile, HUBLOT"></a>
+									</div>
+									<div class="product__description product">
+										<a href="">
+										<h4 class="product__title">Кoлье etoile, HUBLOT</h4>
+										<p class="product__text  product__text_big-color">Белое золото, бриллианты</p>
+										<p class="product__price product__price_weight">539 000 ₽</p>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="item-products__card-cont">
+								<div class="item-products__card product">
+									<div class="product__picture">
+										<a href=""><img src="img/images/earrings1.png" alt="Moon, HUBLOT"></a>
+									</div>
+									<div class="product__description">
+										<a href="">
+										<h4 class="product__title product__title_color">Серьги moon, HUBLOT</h4>
+										<p class="product__text product__text_color">Желтое золото, сапфир</p>
+										<p class="product__price product__price_color product__price_weight">498 000 ₽</p>
+										</a>
+									</div>
+								</div>
+								<div class="item-products__card product">
+									<div class="product__picture">
+										<a href=""><img src="img/images/earrings2.png" alt="Win, BLANCPAIN"></a>
+									</div>
+									<div class="product__description">
+										<a href="">
+										<h4 class="product__title product__title_color">Cерьги win, BLANCPAIN</h4>
+										<p class="product__text product__text_color">Желтое золото, жемчуг</p>
+										<p class="product__price product__price_color product__price_weight">398 000 ₽</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			</section>
+
+			<section class="social">
+				<div class="social__row">
+					<div class="social__slider slider">
+						<div class="slider__wrapper">
+					  			<h4 class="slider__title">Мы</h4>
+					  			<h4 class="slider__title">в социальных сетях</h4>
+					  			<div class="slider__pics image-slider swiper-container">
+									<div class="image-slider__wrapper swiper-wrapper">
+									  <div class="image-slider__slide swiper-slide">
+									      <div class="image-slider__image">
+									    		<img src="img/images/slider1.jpg" alt="pic1">
+									 		</div>
+									  </div>
+									  <div class="image-slider__slide swiper-slide">
+									   	<div class="image-slider__image">
+									    		<img src="img/images/slider2.jpg" alt="pic2">
+									    	</div>
+									  </div>
+									  <div class="image-slider__slide swiper-slide">
+									    	<div class="image-slider__image">
+									    		<img src="img/images/slider3.jpg" alt="pic3">
+									    	</div>
+									  </div>
+									  <div class="image-slider__slide swiper-slide">
+									    	<div class="image-slider__image">
+									    		<img src="img/images/slider4.jpg" alt="pic4">
+									    	</div>
+									  </div>
+									  <div class="image-slider__slide swiper-slide">
+									    	<div class="image-slider__image">
+									    		<img src="img/images/slider5.jpg" alt="pic5">
+									    	</div>
+									  </div>
+									</div>
+								<div class="swiper-button-prev-unique">
+									 <img src="img/icons/Arrow.svg" alt="Arrow">
+								</div>
+								<div class="swiper-button-next-unique">
+									 <img src="img/icons/Arrow.svg" alt="Arrow">
+								</div>
+								<div class="swiper-pagination"></div>
+				   		</div>
+							<div class="social__networks">
+								<div class="social__icons socials">
+									<a href=""><img src="img/icons/Facebook.svg" alt="Facebook"></a>
+									<a href=""><img src="img/icons/Instagram.svg" alt="Instagram"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</section>
+
+		<section class="block-contacts">
+				<div class="block-contacts__container">
+					<div class="block-contacts__item item-pic">
+						<div class="item-pic__row">
+							<div class="item-pic__elem">
+								<img src="img/images/final.jpg" alt="Woman">
+							</div>
+						</div>
+					</div>
+					<div class="block-contacts__item item-text">
+						<div class="item-text__row">
+							<div class="item-text__elem">
+								<div class="item-text__contacts contacts">
+									<div class="contacts__phone phone phone_color phone_size">
+										<p>телефон флагманского магазина</p>
+										<p><a href="tel:+7800456456">+7 800 456 456</a></p>
+									</div>
+								</div>
+							</div>
+							<div class="item-text__elem">
+								<div class="item-text__subscribe subscribe subscribe_size">
+									<form class="subscribe__form" name="subscribe" method="POST" action="">
+										<div class="subscribe__title subscribe__title_color subscribe__title_size">подпишитесь на новости</div>
+										<div class="subscribe__input-container subscribe__input-container_color">
+											<input class="subscribe__input subscribe__input_color subscribe__input_size" type="email" name="email" required="required" placeholder="Введите Email">
+											<input class="subscribe__btn subscribe__btn_color" type="submit" name="submit_btn" value="">
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			</main>
+
+			<footer class="footer">
+				<div class="footer__container">
+					<div class="footer__item item-footer__nav">
+						<ul class="item-footer__list">
+							<li><a href="">работа в компании</a></li>
+							<li><a href="">условия пользования</a></li>
+							<li><a href="">выходные данные</a></li>
+							<li><a href="">политика конфиденциальности</a></li>
+							<li><a href="">карта сайта</a></li>
+						</ul>
+					</div>
+					<div class="footer__item item-footer__content">
+						<div class="item-footer__logo">
+							<img src="img/icons/logo_inv.svg" alt="Moon River logo">
+						</div>
+						<div class="item-footer__data contacts">
+							<div class="item-footer__data-1">
+								<div class="contacts__phone phone">
+									<p>телефон горячей линии</p>
+									<p><a href="tel:+7800456456">+7 800 456 456</a></p>
+								</div>
+								<div class="contacts__socials socials">
+									<a href=""><img src="img/icons/Facebook.svg" alt="Facebook"></a>
+									<a href=""><img src="img/icons/Instagram.svg" alt="Instagram"></a>
+								</div>
+							</div>
+							<div class="item-footer__data-2">
+								<div class="contacts__subscribe subscribe">
+									<form class="subscribe__form" name="subscribe" method="POST" action="">
+										<div class="subscribe__title">подпишитесь на новости</div>
+										<div class="subscribe__input-container">
+											<input class="subscribe__input" type="email" name="email" required="required" placeholder="Введите Email">
+											<input class="subscribe__btn" type="submit" name="submit_btn" value="">
+										</div>
+									</form>
+								</div>
+								<div class="contacts__apps apps">
+									<a href=""><img src="img/icons/apple-store.png" alt="App Store"></a>
+									<a href=""><img src="img/icons/google-play.png" alt="Google Play"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+		</div>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+	</body>
+</html>
