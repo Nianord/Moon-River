@@ -1,0 +1,89 @@
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  padding: 0 7rem; }
+  @media (max-width: 69rem) {
+    .header {
+      padding: 0 2rem; } }
+  .header__container {
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 10rem;
+    align-items: center; }
+    @media (max-width: 48rem) {
+      .header__container {
+        flex-direction: column;
+        height: 8rem; } }
+  .header__logo_minisize {
+    display: none; }
+    @media (max-width: 48rem) {
+      .header__logo_minisize {
+        display: block; } }
+  @media (max-width: 48rem) {
+    .header__logo_commonsize {
+      display: none; } }
+  .header__logo.active .header__logo_minisize {
+    display: block; }
+  .header__logo.active .header__logo_commonsize {
+    display: none; }
+  .header__item {
+    position: relative;
+    display: flex; }
+    @media (max-width: 48rem) {
+      .header__item {
+        justify-content: space-evenly; } }
+    .header__item img {
+      max-width: 100%;
+      display: block; }
+  .header__icons {
+    display: flex;
+    padding: 0 3.5rem; }
+    .header__icons img {
+      margin: 0 3rem 0 0; }
+    @media (max-width: 48rem) {
+      .header__icons {
+        padding: 0; } }
+  .header__burger {
+    cursor: pointer; }
+
+.header__burger {
+  display: block;
+  position: relative;
+  width: 1.875rem;
+  height: 1.25rem;
+  z-index: 3; }
+  .header__burger:before, .header__burger:after {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 0.125rem;
+    left: 0;
+    transition: all 0.3s ease 0s; }
+  .header__burger:before {
+    top: 0; }
+  .header__burger:after {
+    bottom: 0; }
+  .header__burger span {
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 0.125rem;
+    left: 0;
+    top: 0.563rem;
+    transition: all 0.3s ease 0s; }
+  .header__burger.active:after {
+    transform: rotate(-45deg);
+    bottom: 0.563rem; }
+  .header__burger.active:before {
+    transform: rotate(45deg);
+    top: 0.563rem; }
+  .header__burger.active span {
+    transform: scale(0); }
+
+/*# sourceMappingURL=header.css.map */
