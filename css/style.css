@@ -302,7 +302,7 @@ a:hover {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   margin: 0 auto;
   padding: 0 5.5rem; }
@@ -420,9 +420,9 @@ a:hover {
     flex-direction: column;
     margin: 3rem 0 0 0; }
   .product__description_pos {
-    align-items: end;
-    align-self: end;
-    justify-content: end;
+    align-items: flex-end;
+    align-self: flex-end;
+    justify-content: flex-end;
     max-width: 250px; }
   .product__title {
     font-size: 1rem;
@@ -576,7 +576,7 @@ a:hover {
     line-height: 1.1;
     letter-spacing: 0.03em; }
   .menu__text2 {
-    align-self: end;
+    align-self: flex-end;
     display: flex;
     position: relative;
     z-index: 10;
@@ -800,7 +800,7 @@ a:hover {
   flex: 1 1 50%;
   background-color: #EDEDED;
   display: flex;
-  justify-content: end; }
+  justify-content: flex-end; }
 
 .product_big {
   background: none;
